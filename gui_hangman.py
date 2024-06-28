@@ -224,6 +224,7 @@ if __name__ == '__main__' :
         
         guessEntry = Entry(app, textvariable = guess, width = 1)
         guessEntry.pack(side = LEFT, pady = 10)
+        guessEntry.focus
 
         guessButton = Button(app, text = 'Guess', command = clickGuessButton)
         guessButton.pack(side = LEFT, padx = 10, pady = 10)
