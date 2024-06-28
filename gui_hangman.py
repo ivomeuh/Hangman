@@ -15,10 +15,8 @@ for line in lines :
     wordList += line
 wordList = wordList.split(' ')
 word = random.choice(wordList)
-print(word)
 while (len(word) < 4) :
     word = random.choice(wordList)
-    print(word)
 
 guessedLetters = ' '
 triedLetters = ' '
@@ -160,11 +158,8 @@ def clickReplayButton() :
         wordList += line
     wordList = wordList.split(' ')
     word = random.choice(wordList)
-    print(word)
     while (len(word) < 4) :
         word = random.choice(wordList)
-        print(word)
-
 
     chances = 11
     correct = 0
@@ -182,13 +177,11 @@ def clickReplayButton() :
     stickmanLabel.image = stickman11
     stickmanLabel['image'] = stickmanLabel.image
  
-    
 def setupRedactedWord(word) :
     global redactedWord
     for char in word :
         redactedWord += '_'
     redactedWordString = ' '.join(redactedWord)
-    print(redactedWordString)
     wordLabel['text'] = redactedWordString
 
 class MyFrame(Frame) :
